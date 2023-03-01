@@ -1,0 +1,12 @@
+{
+    "name": "Auto entry for Mirea",
+    "description": "Автоматический вход на платформу ДО Мирэа",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup":"main.html"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
