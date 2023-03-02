@@ -13,13 +13,5 @@ chrome.webRequest.onSendHeaders.addListener(details => {
 }, { urls: ["https://online-edu.mirea.ru/*"], types: ["main_frame"] })
 
 // chrome.webRequest.onSendHeaders.addListener(details => {
-//     if (details.url.indexOf("login/?code=") != -1) {
-//         chrome.storage.local.get(["previous", "previousTabId"], result => {
-//             chrome.tabs.update(result.previousTabId, { url: result.previous })
-//         })
-//     }
-// }, { urls: ["https://online-edu.mirea.ru/*"], types: ["main_frame"] })
-
-chrome.webRequest.onSendHeaders.addListener(details => {
-    console.log(details)
-}, { urls: ["<all_urls>"], types: ["main_frame"] })
+//     console.log(details)
+// }, { urls: ["<all_urls>"], types: ["main_frame"] })

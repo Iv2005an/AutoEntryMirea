@@ -1,5 +1,5 @@
 {
-    "name": "Auto entry for Mirea",
+    "name": "Авто Вход для ДО Мирэа",
     "description": "Автоматический вход на платформу ДО Мирэа",
     "version": "1.0",
     "action": {
@@ -7,11 +7,10 @@
     },
     "permissions": [
         "storage",
-        "webRequest",
-        "tabs"
+        "webRequest"
     ],
     "host_permissions": [
-        "<all_urls>"
+        "<https://login.mirea.ru/login/*>"
     ],
     "background": {
         "service_worker": "background.js"
