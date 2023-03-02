@@ -2,11 +2,29 @@
     "name": "Auto entry for Mirea",
     "description": "Автоматический вход на платформу ДО Мирэа",
     "version": "1.0",
-    "manifest_version": 3,
     "action": {
-        "default_popup":"main.html"
+        "default_popup": "popup.html"
     },
     "permissions": [
+        "storage",
+        "webRequest",
         "tabs"
-    ]
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://login.mirea.ru/login/*"
+            ],
+            "js": [
+                "login.js"
+            ]
+        }
+    ],
+    "manifest_version": 3
 }
