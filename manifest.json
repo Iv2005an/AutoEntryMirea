@@ -10,7 +10,7 @@
         "webRequest"
     ],
     "host_permissions": [
-        "<https://login.mirea.ru/login/*>"
+        "https://login.mirea.ru/login/*"
     ],
     "background": {
         "service_worker": "background.js"
