@@ -12,6 +12,8 @@ chrome.webRequest.onSendHeaders.addListener(details => {
     })
 }, { urls: ["https://online-edu.mirea.ru/*"], types: ["main_frame"] })
 
+
+// DEBUG
 // chrome.webRequest.onSendHeaders.addListener(details => {
 //     console.log(details)
-// }, { urls: ["<all_urls>"], types: ["main_frame"] })
+// }, { urls: ["<all_urls>"], types: ["main_frame"]})

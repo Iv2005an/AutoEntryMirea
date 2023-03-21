@@ -1,7 +1,7 @@
 {
     "name": "Авто Вход для ДО Мирэа",
     "description": "Автоматический вход на платформу ДО Мирэа",
-    "version": "1.0",
+    "version": "1.0.1",
     "action": {
         "default_popup": "popup.html"
     },
@@ -16,7 +16,8 @@
         "webRequest"
     ],
     "host_permissions": [
-        "https://login.mirea.ru/login/*"
+        "https://login.mirea.ru/login/*",
+        "https://online-edu.mirea.ru/"
     ],
     "background": {
         "service_worker": "background.js"
