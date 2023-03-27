@@ -17,7 +17,7 @@
     ],
     "host_permissions": [
         "https://login.mirea.ru/login/*",
-        "https://online-edu.mirea.ru/"
+        "https://online-edu.mirea.ru/*"
     ],
     "background": {
         "service_worker": "background.js"
